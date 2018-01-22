@@ -1,0 +1,78 @@
+%target {
+  position: absolute;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.6vh;
+}
+
+%target-point {
+  position: absolute;
+}
+
+.therapy-targets {
+  background-image: linear-gradient(#338ffd 10%, #afdffd 90%, #3183ce 90%, #4fc1f8);
+
+  &__content {
+    position: relative;
+    background-image: url(assets/img/presentation-bg.jpg);
+    background-position: 0 0;
+    color: #0d319c;
+  }
+
+  &__headline {
+    max-width: 100vh;
+    margin-top: 19vh;
+    margin-left: 9.7vh;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 6.5vh;
+    font-weight: normal;
+  }
+
+  &__first {
+    &-target {
+      @extend %target;
+      top: 36%; left: 61%;
+    }
+
+    &-point {
+      @extend %target-point;
+      top: 34%; left: 55%;
+    }
+  }
+
+  &__second {
+    &-target {
+      @extend %target;
+      top: 52%; left: 22%;
+    }
+
+    &-point {
+      @extend %target-point;
+      top: 55.5%; left: 26.7%;
+    }
+  }
+
+  &__third {
+    &-target {
+      @extend %target;
+      top: 66%; left: 36%;
+    }
+
+    &-point {
+      @extend %target-point;
+      top: 70%; left: 46.8%;
+    }
+  }
+
+  &__fourth {
+    &-target {
+      @extend %target;
+      top: 64%; left: 77%;
+    }
+
+    &-point {
+      @extend %target-point;
+      top: 67.3%; left: 80.3%;
+    }
+  }
+}

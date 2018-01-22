@@ -1,0 +1,55 @@
+.scroll-down-hint {
+  position: absolute;
+  left: 50%; bottom: 0;
+  width: 60%;
+  height: 9vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translateX(-50%);
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%; left: 50%;
+    height: 2.9vh; width: 5.8vh;
+    transform: translateX(-50%);
+    background: url(assets/img/down-arrow.png) no-repeat;
+    background-size: contain;
+  }
+
+  &__text {
+    text-align: center;
+    font-family: 'Gotham pro', sans-serif;
+    font-size: 2vh;
+    color: white;
+  }
+
+  &__horizon {
+    position: absolute;
+    width: 100%;
+    bottom: -6.5vh;
+
+    &:before {
+      content: '';
+      display: block;
+      height: 8vh;
+      border-radius: 100%;
+      background-color: #f78b1f;
+      box-shadow: 0 0 10px 9px #f78b1f;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0; left: 50%;
+      height: 5vh;
+      width: 45%;
+      border-radius: 100%;
+      transform: translateX(-50%);
+      background-color: #f78b1f;
+      box-shadow: 0 0 25px 28px rgba(247, 139, 31, 0.5);
+    }
+  }
+}

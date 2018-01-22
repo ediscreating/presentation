@@ -1,0 +1,10 @@
+mixin flickering-point(width, height, mixClass)
+  - const className = mixClass ? 'flickering-point ' + mixClass : 'flickering-point';
+
+  svg(xmlns="http://www.w3.org/2000/svg" width=width height=height viewBox="0 0 100 100" class=className)
+    linearGradient(id="b" gradientUnits="userSpaceOnUse" x1="54" y1="108" x2="54")
+      stop(offset="0" stop-color="#de791b")
+      stop(offset="1" stop-color="#cf1437")
+    circle(class="flickering-point__circle flickering-point__circle_third" cx="50" cy="50" r="50" stroke="url(#b)" stroke-miterlimit="10" stroke-width="2")
+    circle(class="flickering-point__circle flickering-point__circle_second" cx="50" cy="50" r="50" stroke="url(#b)" stroke-miterlimit="10" stroke-width="2")
+    circle(class="flickering-point__circle" cx="50" cy="50" r="50" stroke="url(#b)" stroke-miterlimit="10" stroke-width="2")

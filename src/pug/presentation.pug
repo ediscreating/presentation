@@ -1,0 +1,17 @@
+include slider.pug
+
+.presentation
+  +slider({ isVertical: true })
+    +slider-item
+      include slides/therapy-targets.pug
+    +slider-item
+      include slides/therapy-foundation.pug
+    +slider-item
+      include slides/diagrams.pug
+  ul.pagination-dots
+    li.pagination-dots__item
+      button(class="pagination-dots__dot pagination-dots__dot_active" type="button")
+    li.pagination-dots__item
+      button(class="pagination-dots__dot" type="button")
+    li.pagination-dots__item
+      button(class="pagination-dots__dot" type="button")

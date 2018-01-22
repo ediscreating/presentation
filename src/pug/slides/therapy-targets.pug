@@ -1,0 +1,16 @@
+include ../flickering-point.pug
+
+div(class='therapy-targets')
+  section(class='therapy-targets__content presentation__slide presentation__slide_has-shadow')
+    h1.therapy-targets__headline Всегда ли цели терапии СД2 на поверхности?
+    p(class='therapy-targets__first-target') Цель по HbA1c
+    p(class='therapy-targets__second-target') Гипогликемия
+    p(class='therapy-targets__third-target') Осложнения СД
+    p(class='therapy-targets__fourth-target') СС риски
+    +flickering-point('7vh', '7vh', 'therapy-targets__first-point')
+    +flickering-point('3.6vh', '3.6vh', 'therapy-targets__second-point')
+    +flickering-point('2.2vh', '2.2vh', 'therapy-targets__third-point')
+    +flickering-point('2.2vh', '2.2vh', 'therapy-targets__fourth-point')
+    div.scroll-down-hint
+      div.scroll-down-hint__text Листайте вниз
+      div.scroll-down-hint__horizon

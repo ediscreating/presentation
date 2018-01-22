@@ -1,0 +1,12 @@
+mixin slider(opts)
+  .slider
+    if opts.isVertical
+      ul(class="slider__track slider__track_vertical")
+        block
+    else
+      ul(class="slider__track slider__track_horizontal")
+        block
+
+mixin slider-item()
+  li.slider__item
+    block

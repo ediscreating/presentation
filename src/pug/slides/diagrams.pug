@@ -1,0 +1,27 @@
+div(class='diagrams')
+  div(class='diagrams__content presentation__slide presentation__slide_has-shadow')
+    +slider({ isVertical: false })
+      +slider-item
+        section(class='diagrams__first-slide presentation__slide')
+          h1.diagrams__first-headline Звенья патогенеза СД2
+          div.center-text
+            img(class='diagrams__first-diagram' src='assets/img/slide-3_1-diagram.png')
+      +slider-item
+        section(class='diagrams__second-slide presentation__slide')
+          h1.diagrams__second-headline Смертельный октет
+          div.center-text
+            img(class='diagrams__second-diagram' src='assets/img/slide-3_2-diagram.png')
+      +slider-item
+        section(class='slide diagrams__third-slide presentation__slide')
+          h1.diagrams__third-headline Звенья патогенеза СД2
+          div.center-text
+            img(class='diagrams__third-diagram' src='assets/img/slide-3_3-diagram.png')
+    div.diagrams__slider-ctrl
+      div.diagrams__range
+        div.diagrams__range-progress
+        div.diagrams__range-thumb
+      ul.diagrams__range-labels
+        li.diagrams__range-label 1988
+        li(class='diagrams__range-label center-text') 2009
+        li(class='diagrams__range-label right-text') 2016
+    div.diagrams__bg-continuation

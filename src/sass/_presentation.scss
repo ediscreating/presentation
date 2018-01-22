@@ -1,0 +1,37 @@
+.presentation {
+  position: relative;
+  min-width: 1024px;
+  height: 100%;
+
+  &__slide {
+    width: 133vh;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 1px;
+    box-sizing: border-box;
+    background-size: cover;
+
+    &_has-shadow {
+      position: relative;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 15px;
+        height: 100%;
+      }
+
+      &:before {
+        box-shadow: inset -15px 0 15px -15px rgba(50, 50, 50, 0.2);
+        left: -15px;
+      }
+
+      &:after {
+        box-shadow: inset 15px 0 15px -15px rgba(50, 50, 50, 0.2);
+        right: -15px;
+      }
+    }
+  }
+}
