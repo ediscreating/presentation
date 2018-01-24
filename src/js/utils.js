@@ -15,3 +15,29 @@ export function nearestNumInSortedArray(arr, number) {
 
   return nearest;
 }
+
+export function range(a, b, step) {
+  const range = [a];
+
+  if (b < a) {
+    step = step && step > 0 ? -step :
+           step && step < 0 ? step :
+           -1;
+
+    while(a + step >= b) {
+      a += 10;
+      range.push(Math.round(a * 10) / 10);
+    }
+  } else {
+    step = step && step < 0 ? -step :
+           step && step > 0 ? step :
+           1;
+
+    while(a + step <= b) {
+      a += step;
+      range.push(Math.round(a * 10) / 10);
+    }
+  }
+
+  return range;
+}
